@@ -1,0 +1,75 @@
+Structure for data driven framework
+
+    data_driven_framework/
+    ├── data/
+    │   ├── test_data.csv
+    │   ├── test_data.xlsx
+    │   └── config.yaml
+    ├── tests/
+    │   ├── test_login.py
+    │   └── test_search.py
+    ├── pages/
+    │   ├── login_page.py
+    │   └── search_page.py
+    ├── utils/
+    │   ├── data_reader.py
+    │   ├── logger.py
+    │   └── webdriver_setup.py
+    ├── conftest.py
+    ├── requirements.txt
+    └── pytest.ini
+
+
+* data
+
+    Purpose: Store test data (CSV, Excel, JSON, or YAML).
+
+* tests
+
+      Purpose: Contains your test cases using Pytest.
+
+      Examples: test_login.py: Contains tests like test_valid_login, test_invalid_login, reading data from CSV/Excel.
+
+* pages
+
+    Purpose: Implements Page Object Model (POM).
+
+    Examples:
+
+    login_page.py: Page class for login page (locators, actions).
+    search_page.py: Another page class.
+
+utils
+
+    Purpose: Utility functions for the framework.
+    Examples:
+
+    data_reader.py: Read CSV/Excel data and return as list/dict.
+    logger.py: Logging setup.
+    webdriver_setup.py: Selenium driver initialization.
+
+conftest.py
+
+    Purpose: Pytest fixtures (like driver setup, teardown, hooks).
+    Example:
+
+        @pytest.fixture(scope="class")
+        def init_driver(request):
+            driver = webdriver.Chrome()
+            driver.maximize_window()
+            request.cls.driver = driver
+            yield
+            driver.quit()
+
+requirements.txt
+
+    Purpose: List of dependencies (like Selenium, Pytest, Pandas, etc.).
+    Examples:
+        selenium
+        pytest
+        pandas
+        openpyxl
+
+pytest.ini
+
+    Purpose: Config for Pytest (like markers, test paths, etc.).
