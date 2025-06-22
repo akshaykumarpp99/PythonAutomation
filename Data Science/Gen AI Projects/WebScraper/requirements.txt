@@ -1,0 +1,8 @@
+streamlit
+langchain
+langchain-groq>=0.1.2
+selenium
+beautifulsoup4
+lxml
+html5lib
+python-dotenv
