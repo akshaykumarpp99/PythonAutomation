@@ -1,0 +1,29 @@
+10 Hard Truths about Data Science
+
+* Data is NEVER good
+
+    - Data will be incomplete, incosistent and biased always.
+    - Most important skill to have Data Scientist is to understand data, its structure and be able to clean it.
+
+* Data Cleaning is 80% of the Job.
+
+    - Data cleaning, feature engineering without data leaking and a Linear Model.
+    - Spend time with messy data not building models.
+
+* Domain Knowledge Matters.
+
+    - A simple model with domain knowledge always beats complex models to raw data.
+
+* Choose 1 - 2 Business Domains.
+
+    - Dig deep.
+
+* Accuracy isn't everything.
+
+* Understanding the foundations are crucial.
+
+    - Many times people try different algorithms over and over again without understanding how they actually works.
+
+* Stakeholders think differently.
+
+    - Our great model means little if it doesnt solve a business problem.
